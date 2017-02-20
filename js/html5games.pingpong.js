@@ -63,7 +63,12 @@ if (ball.x +ball.speed*ball.directionX > playgroundWidth)
 // player B lost.
 pingpong.scoreA++;
 $("#scoreA").html(pingpong.scoreA);
-
+//show win page
+if ( pingpong.scoreA > 3 )
+{
+window.open("win.html");
+window.close()
+}
 // reset the ball;
 ball.x = 450;
 ball.y = 200;
@@ -79,6 +84,14 @@ if (ball.x + ball.speed*ball.directionX < 0)
 // player A lost.
 pingpong.scoreB++;
 $("#scoreB").html(pingpong.scoreB);
+
+//show win page
+if ( pingpong.scoreA > 2 )
+{
+window.open("file:///G:/myprog/mygame/win.html");
+window.close();
+return
+}
 
 // reset the ball;
 ball.x = 450;
