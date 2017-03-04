@@ -1,64 +1,64 @@
 <!DOCTYPE html>
-    <html lang="en">
-       <head>
+<html lang="en">
+    <head>
            <meta charset="utf-8">
            <title>Ping Pong</title>
-<style>
-#playground{
-background: #e0ffe0 url(images/pixel_grid.png);
-width: 800px;
-height: 400px;
-position: relative;
-overflow: hidden;
-}
-#ball {
-background: #fbb;
-position: absolute;
-width: 20px;
-height: 20px;
-left: 390px;
-top: 200px;
-border-radius: 10px;
-}
-.paddle {
-background: #bbf;
-left: 50px;
-top: 170px;
-position: absolute;
-width: 30px;
-height: 70px;
-}
-#paddleB {
-left: 720px;
-}
-</style>
-       </head>
-       <body>
-          <header>
-            <h1>Ping Pong</h1>
-          </header>
+           <style>
+            #playground{
+              background: #e0ffe0 url(images/pixel_grid.png);
+              width: 800px;
+              height: 400px;
+              position: relative;
+              overflow: hidden;
+            }
+            #ball {
+              background: #fbb;
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              left: 390px;
+              top: 200px;
+              border-radius: 10px;
+            }
+            .paddle {
+              background: #bbf;
+              left: 50px;
+              top: 170px;
+              position: absolute;
+              width: 30px;
+              height: 70px;
+            }
+            #paddleB {
+              left: 720px;
+            }
+            </style>
+    </head>
+    <body>
+        <header>
+          <h1>Ping Pong</h1>
+        </header>
 
-          <div id="scoreboard">
-              <div class="score">Player A : <span id="scoreA">0</span></div>
-              <div class="score">Player B : <span id="scoreB">0</span></div>
-          </div>
+        <div id="scoreboard">
+          <div class="score">Player A : <span id="scoreA">0</span></div>
+          <div class="score">Player B : <span id="scoreB">0</span></div>
+        </div>
 
-          <div id="game">
-            <div id="playground">
-              <div id="paddleA" class="paddle"></div>
-              <div id="paddleB" class="paddle"></div>
-              <div id="ball"></div>
-            </div>
+        <div id="game">
+          <div id="playground">
+            <div id="paddleA" class="paddle"></div>
+            <div id="paddleB" class="paddle"></div>
+            <div id="ball"></div>
           </div>
-          <footer>
+        </div>
+        <footer>
               This is an example of creating a Ping Pong Game.
-          </footer>
-          <script src="js/jquery-3.1.1.js"></script>
-          <script src="js/html5games.pingpong.js"></script>
-                    <script>
-                         $(function(){
-                             alert("Welcome to the Ping Pong battle.");
-                         });
-                     </script>
-       </body>
-   </html>
+        </footer>
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/html5games.pingpong.js"></script>
+        <script>
+         $(function(){
+           alert("Welcome to the Ping Pong battle.\n 按空格键发球");
+         });
+        </script>
+    </body>
+</html>
